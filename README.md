@@ -13,7 +13,7 @@ A boilerplate to start a client-side project using React.
 
 ## Getting started
 ```bash
-$ git clone 
+$ git clone git@github.com:rbartoli/react-boilerplate-2016.git
 $ npm install
 $ npm start
 ```
