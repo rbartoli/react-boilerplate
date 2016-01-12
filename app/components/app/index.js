@@ -1,8 +1,8 @@
-import React from 'react';
+import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import {Link} from 'react-router';
 
-const App = React.createClass({
+class App extends Component {
     render() {
         return (
             <div>
@@ -15,6 +15,6 @@ const App = React.createClass({
             </div>
         )
     }
-});
+}
 
 export default App;
