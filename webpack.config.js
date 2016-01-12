@@ -7,8 +7,20 @@ module.exports = {
     },
 
     output: {
+        path: __dirname + '/',
         filename: 'app.js',
-        path: __dirname + '/dist',
+    },
+    
+    devtool: 'eval-source-map',
+    
+    devServer: {
+        contentBase: 'dist',
+        historyApiFallback: false,
+        // stats: 'errors-only'
+    },
+    
+    resolve: {
+        extensions: ['', '.js']
     },
 
     module: {
@@ -28,6 +40,14 @@ module.exports = {
             {
                 test: /\.scss$/,
                 loaders: ['style', 'css', 'sass']
+            },
+            { 
+                test: /\.jpg$/, 
+                loader: 'file' 
+            },
+            { 
+                test: /\.png$/, 
+                loader: 'url?mimetype=image/png' 
             }
         ],
     },
