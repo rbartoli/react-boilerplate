@@ -2,7 +2,7 @@
   "name": "react-boilerplate-2016",
   "version": "0.1.1",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --progress",
+    "start": "webpack-dev-server --hot --inline",
     "build": "NODE_ENV='production' webpack -p"
   },
   "author": "Riccardo Bartoli <info@rblab.com> (http://rblab.com/)",

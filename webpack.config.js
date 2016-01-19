@@ -12,6 +12,7 @@ var devConfig = {
     devServer: {
         contentBase: 'public',
         historyApiFallback: false,
+        progress: true,
         stats: 'errors-only'
     },
     resolve: {
