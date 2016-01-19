@@ -1,54 +1,54 @@
-module.exports = {
-    context: __dirname + '/app',
-    
-    entry: {
-      javascript: './app.js',
-      html: './index.html',
-    },
+var path = require('path');
 
+var devConfig = {
+    context: path.join(__dirname, '/app'),
+    entry: ['./app.js'],
     output: {
-        path: __dirname + '/',
+        path: path.join(__dirname, '/build/'),
+        publicPath: '/public/assets/js/',
         filename: 'app.js',
     },
-    
     devtool: 'eval-source-map',
-    
     devServer: {
-        contentBase: 'dist',
+        contentBase: 'public',
         historyApiFallback: false,
-        // stats: 'errors-only'
+        stats: 'errors-only'
     },
-    
     resolve: {
         extensions: ['', '.js']
     },
-
     module: {
         loaders: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader',
+                loader: 'babel',
                 query: {
                     presets: ['react', 'es2015']
                 }
             },
             {
-                test: /\.html$/,
-                loader: 'file?name=[name].[ext]',
+                test: /\.css$/,
+                exclude: /node_modules/,
+                loaders: ['style', 'css']
             },
             {
                 test: /\.scss$/,
-                loaders: ['style', 'css', 'sass']
+                exclude: /node_modules/,
+                loaders: ['style', 'css', 'sass', 'autoprefixer']
             },
-            { 
-                test: /\.jpg$/, 
-                loader: 'file' 
-            },
-            { 
-                test: /\.png$/, 
-                loader: 'url?mimetype=image/png' 
+            {
+                test: /\.(jpg|png|ttf|eot|woff|woff2|svg)$/,
+                exclude: /node_modules/,
+                loader: 'url?limit=100000'
             }
-        ],
-    },
+        ]
+    }
 }
+
+if (process.env.NODE_ENV === 'production') {
+    devConfig.devtool = '';
+    devConfig.devServer = {};
+};
+
+module.exports = devConfig;
