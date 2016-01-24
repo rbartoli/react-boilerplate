@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import { Component } from 'react';
 import { Link } from 'react-router';
 
 class App extends Component {
