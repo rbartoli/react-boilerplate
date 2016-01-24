@@ -10,6 +10,7 @@ A boilerplate to start a client-side project using React.
 - webpack-dev-server + hot module replacement
 - babel 6
 - sass
+- eslint
 
 ## Getting started
 ```bash
