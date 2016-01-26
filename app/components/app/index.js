@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
+import style from './style.scss';
 
 class App extends Component {
     render() {
@@ -17,7 +18,7 @@ class App extends Component {
 }
 
 App.propTypes = {
-    children: React.PropTypes.node
+    children: PropTypes.node
 };
 
 export default App;
