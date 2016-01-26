@@ -2,7 +2,9 @@ var path = require('path');
 
 var devConfig = {
     context: path.join(__dirname, '/app'),
-    entry: ['./app.js'],
+    entry: [
+        './app.js'
+    ],
     output: {
         path: path.join(__dirname, '/build/'),
         publicPath: '/public/assets/js/',
@@ -12,21 +14,15 @@ var devConfig = {
     devServer: {
         contentBase: 'public',
         historyApiFallback: false,
-        progress: true,
+        
         stats: 'errors-only'
-    },
-    resolve: {
-        extensions: ['', '.js']
     },
     module: {
         loaders: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel',
-                query: {
-                    presets: ['react', 'es2015']
-                }
+                loaders: ['react-hot', 'babel'],
             },
             {
                 test: /\.css$/,
@@ -36,7 +32,7 @@ var devConfig = {
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
-                loaders: ['style', 'css', 'sass', 'autoprefixer']
+                loaders: ['style', 'css', 'sass']
             },
             {
                 test: /\.(jpg|png|ttf|eot|woff|woff2|svg)$/,
