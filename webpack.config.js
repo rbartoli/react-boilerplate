@@ -20,7 +20,7 @@ var devConfig = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loaders: ['react-hot', 'babel'],
+                loader: 'babel',
             },
             {
                 test: /\.css$/,
