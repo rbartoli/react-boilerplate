@@ -13,9 +13,7 @@ var devConfig = {
     devtool: 'eval-source-map',
     devServer: {
         contentBase: 'public',
-        historyApiFallback: false,
-        
-        stats: 'errors-only'
+        historyApiFallback: false
     },
     module: {
         loaders: [
