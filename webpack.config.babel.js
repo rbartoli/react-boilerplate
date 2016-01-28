@@ -1,6 +1,6 @@
-var path = require('path');
+import path from 'path';
 
-var devConfig = {
+let devConfig = {
     context: path.join(__dirname, '/app'),
     entry: [
         './app.js'
@@ -46,4 +46,4 @@ if (process.env.NODE_ENV === 'production') {
     devConfig.devServer = {};
 };
 
-module.exports = devConfig;
+export default devConfig;
