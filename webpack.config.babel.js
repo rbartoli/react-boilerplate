@@ -1,13 +1,14 @@
 import path from 'path';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 let devConfig = {
-    context: path.join(__dirname, '/app'),
+    context: path.join(__dirname, 'app'),
     entry: [
         './app.js'
     ],
     output: {
-        path: path.join(__dirname, '/build/'),
-        publicPath: '/public/assets/js/',
+        path: path.join(__dirname, 'build/assets/js'),
+        publicPath: 'assets/js/',
         filename: 'app.js',
     },
     devtool: 'eval-source-map',
@@ -38,7 +39,13 @@ let devConfig = {
                 loader: 'url?limit=100000'
             }
         ]
-    }
+    },
+    plugins: [
+        new CopyWebpackPlugin([
+            // { from: '../public/**/*', to: '../build/*' }
+            { from: '../public', to: '/build' },
+        ])
+    ]
 }
 
 if (process.env.NODE_ENV === 'production') {
