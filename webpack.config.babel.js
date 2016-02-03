@@ -42,8 +42,10 @@ let devConfig = {
     },
     plugins: [
         new CopyWebpackPlugin([
-            // { from: '../public/**/*', to: '../build/*' }
-            { from: '../public', to: '/build' },
+            { 
+                from: '../public', 
+                to: '/build' 
+            }
         ])
     ]
 }
