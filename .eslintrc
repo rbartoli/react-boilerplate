@@ -1,4 +1,4 @@
-module.exports = {
+{
     "ecmaFeatures": {
         "jsx": true,
         "modules": true,
@@ -74,4 +74,4 @@ module.exports = {
             "pragma": "React"
         }
     }
-};
+}
