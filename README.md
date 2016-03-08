@@ -18,7 +18,7 @@ As you can see the HMR is working without reloading the page for React component
 
 ## Getting started
 ```bash
-$ git clone git@github.com:rbartoli/react-boilerplate-2016.git
+$ git clone https://github.com/rbartoli/react-boilerplate.git
 $ npm install
 $ npm start
 ```
