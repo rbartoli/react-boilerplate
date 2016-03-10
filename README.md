@@ -9,7 +9,7 @@ A boilerplate to start a client-side project using React.
 - webpack-dev-server + hot module replacement
 - Babel 6 plus presets for es2015, react and react-hmre
 - SASS support using node-sass
-- ESLint
+- ESLint (using babel as parser and eslint-loader to add eslint support to webpack)
 
 ## React boilerplate 2016 HMR in action
 ![ScreenShot](https://cloud.githubusercontent.com/assets/983189/12616751/91833172-c504-11e5-87e9-f36efbd1d17c.gif)
