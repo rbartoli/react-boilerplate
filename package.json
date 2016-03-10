@@ -1,5 +1,5 @@
 {
-  "name": "react-boilerplate-2016",
+  "name": "react-boilerplate",
   "version": "0.1.4",
   "scripts": {
     "start": "webpack-dev-server --hot --inline --progress",
