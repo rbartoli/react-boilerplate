@@ -1,5 +1,6 @@
 import path from 'path';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
+import WebpackNotifierPlugin from 'webpack-notifier';
 
 let devConfig = {
     context: path.join(__dirname, 'app'),
@@ -53,7 +54,8 @@ let devConfig = {
                 from: '../public', 
                 to: '/build' 
             }
-        ])
+        ]),
+        new WebpackNotifierPlugin()
     ]
 };
 
