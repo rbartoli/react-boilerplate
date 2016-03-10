@@ -10,6 +10,7 @@
         "browser": true
     },
     "extends": "eslint:recommended",
+    "parser": "babel-eslint",
     "plugins": [
         "react"
     ],
@@ -18,18 +19,19 @@
             2,
             4
         ],
-        "quotes": [
-            2,
-            "single"
-        ],
         "linebreak-style": [
             2,
             "unix"
+        ],
+        "quotes": [
+            2,
+            "single"
         ],
         "semi": [
             2,
             "always"
         ],
+        "strict": 0,
         "jsx-quotes": 1,
         "react/display-name": 0,
         "react/forbid-prop-types": 1,
@@ -47,7 +49,6 @@
         "react/jsx-no-literals": 1,
         "react/jsx-no-undef": 1,
         "react/jsx-pascal-case": 1,
-        "react/jsx-sort-prop-types": 1,
         "react/jsx-sort-props": 0,
         "react/jsx-uses-react": 2,
         "react/jsx-uses-vars": 1,
@@ -67,6 +68,7 @@
         "react/require-extension": 1,
         "react/self-closing-comp": 1,
         "react/sort-comp": 1,
+        "react/sort-prop-types": 1,
         "react/wrap-multilines": 1
     },
     "settings": {
