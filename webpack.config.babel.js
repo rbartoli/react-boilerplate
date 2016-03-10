@@ -9,7 +9,7 @@ let devConfig = {
     output: {
         path: path.join(__dirname, 'build/assets/js'),
         publicPath: 'assets/js/',
-        filename: 'app.js',
+        filename: 'app.js'
     },
     devtool: 'eval-source-map',
     devServer: {
@@ -17,11 +17,18 @@ let devConfig = {
         historyApiFallback: false
     },
     module: {
+        preLoaders: [
+            {
+                test: /\.js$/, 
+                exclude: /node_modules/,
+                loader: 'eslint'
+            } 
+        ],
         loaders: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel',
+                loader: 'babel'
             },
             {
                 test: /\.css$/,
@@ -48,11 +55,11 @@ let devConfig = {
             }
         ])
     ]
-}
+};
 
 if (process.env.NODE_ENV === 'production') {
     devConfig.devtool = '';
     devConfig.devServer = {};
-};
+}
 
 export default devConfig;
