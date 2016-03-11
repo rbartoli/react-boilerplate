@@ -8,7 +8,7 @@
   "author": "Riccardo Bartoli <info@rblab.com> (http://rblab.com/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rbartoli/react-boilerplate"
+    "url": "git+https://github.com/rbartoli/react-boilerplate"
   },
   "license": "MIT",
   "dependencies": {
