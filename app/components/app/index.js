@@ -1,11 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
-import style from './style.scss';
+import styles from './styles.scss';
 
 class App extends Component {
     render() {
         return (
-            <div>
+            <div className={styles.root}>
                 <h1>{'React App'}</h1>
                 <ul>
                     <li><Link to="/">{'Home'}</Link></li>
