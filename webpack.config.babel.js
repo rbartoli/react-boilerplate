@@ -3,7 +3,7 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 import WebpackNotifierPlugin from 'webpack-notifier';
 
 let devConfig = {
-    context: path.join(__dirname, 'app'),
+    context: path.join(__dirname, 'src'),
     entry: [
         './app.js'
     ],
