@@ -1,7 +1,7 @@
 {
   "name": "react-boilerplate",
   "version": "0.2.2",
-    "scripts": {
+  "scripts": {
     "start": "webpack-dev-server --hot --inline --progress",
     
     "prebuild": "npm run clean",
