@@ -13,7 +13,7 @@ let devConfig = {
     },
     devtool: 'eval-source-map',
     devServer: {
-        contentBase: 'public',
+        contentBase: 'static',
         historyApiFallback: false
     },
     module: {
