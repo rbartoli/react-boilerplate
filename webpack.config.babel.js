@@ -1,5 +1,4 @@
 import path from 'path';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
 import WebpackNotifierPlugin from 'webpack-notifier';
 
 let devConfig = {
@@ -49,12 +48,6 @@ let devConfig = {
         ]
     },
     plugins: [
-        new CopyWebpackPlugin([
-            { 
-                from: '../public', 
-                to: '/build' 
-            }
-        ]),
         new WebpackNotifierPlugin()
     ]
 };
