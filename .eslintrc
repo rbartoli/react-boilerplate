@@ -29,7 +29,7 @@
         ],
         "semi": [
             2,
-            "always"
+            "never"
         ],
         "strict": 0,
         "jsx-quotes": 1,

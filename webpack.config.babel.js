@@ -1,5 +1,5 @@
-import path from 'path';
-import WebpackNotifierPlugin from 'webpack-notifier';
+import path from 'path'
+import WebpackNotifierPlugin from 'webpack-notifier'
 
 let devConfig = {
     context: path.join(__dirname, 'src'),
@@ -50,11 +50,11 @@ let devConfig = {
     plugins: [
         new WebpackNotifierPlugin()
     ]
-};
-
-if (process.env.NODE_ENV === 'production') {
-    devConfig.devtool = '';
-    devConfig.devServer = {};
 }
 
-export default devConfig;
+if (process.env.NODE_ENV === 'production') {
+    devConfig.devtool = ''
+    devConfig.devServer = {}
+}
+
+export default devConfig
