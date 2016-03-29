@@ -1,4 +1,5 @@
 import path from 'path'
+import webpack from 'webpack'
 import WebpackNotifierPlugin from 'webpack-notifier'
 
 let config = {
@@ -55,6 +56,13 @@ let config = {
 if (process.env.NODE_ENV === 'production') {
     config.devtool = 'source-map'
     config.devServer = {}
+    config.plugins = [
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': JSON.stringify('production')
+            }
+        })
+    ]
 }
 
 export default config
