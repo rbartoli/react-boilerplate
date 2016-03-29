@@ -6,7 +6,7 @@
     "prebuild": "npm run clean",
     "build": "NODE_ENV=production webpack -p",
     "postbuild": "npm run copy",
-    "clean": "rm -rf build",
+    "clean": "rimraf build",
     "copy": "cp -r static/* build"
   },
   "author": "Riccardo Bartoli <info@rblab.com> (http://rblab.com/)",
@@ -33,6 +33,7 @@
     "eslint-plugin-react": "^4.2.1",
     "file-loader": "^0.8.5",
     "node-sass": "^3.4.2",
+    "rimraf": "^2.5.2",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
