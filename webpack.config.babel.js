@@ -14,7 +14,7 @@ let devConfig = {
     devtool: 'eval-source-map',
     devServer: {
         contentBase: 'static',
-        historyApiFallback: false
+        historyApiFallback: true
     },
     module: {
         preLoaders: [
