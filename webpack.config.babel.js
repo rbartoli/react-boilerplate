@@ -1,7 +1,7 @@
 import path from 'path'
 import WebpackNotifierPlugin from 'webpack-notifier'
 
-let devConfig = {
+let config = {
     context: path.join(__dirname, 'src'),
     entry: [
         './app.js'
@@ -53,8 +53,8 @@ let devConfig = {
 }
 
 if (process.env.NODE_ENV === 'production') {
-    devConfig.devtool = ''
-    devConfig.devServer = {}
+    config.devtool = 'source-map'
+    config.devServer = {}
 }
 
-export default devConfig
+export default config
