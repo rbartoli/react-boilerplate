@@ -7,8 +7,8 @@ let config = {
         './index.js'
     ],
     output: {
-        path: path.join(__dirname, 'build/assets/js'),
-        publicPath: 'assets/js/',
+        path: path.join(__dirname, 'build/scripts'),
+        publicPath: 'scripts/',
         filename: 'app.js'
     },
     devtool: 'eval-source-map',
