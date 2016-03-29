@@ -4,7 +4,7 @@ import WebpackNotifierPlugin from 'webpack-notifier'
 let config = {
     context: path.join(__dirname, 'src'),
     entry: [
-        './app.js'
+        './index.js'
     ],
     output: {
         path: path.join(__dirname, 'build/assets/js'),
