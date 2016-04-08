@@ -10,7 +10,7 @@ class App extends Component {
                 <ul>
                     <li><Link to="/">{'Home'}</Link></li>
                 </ul>
-                
+
                 {this.props.children}
             </div>
         )
