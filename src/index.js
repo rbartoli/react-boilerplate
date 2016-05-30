@@ -5,6 +5,6 @@ import App from './components/app'
 
 render((
     <Router history={browserHistory}>
-        <Route path="/" component={App} />
+        <Route component={App} path="/" />
     </Router>
 ), document.getElementById('app'))
