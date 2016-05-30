@@ -6,7 +6,7 @@ A boilerplate to start a client-side project using React.
 - [React](https://github.com/facebook/react)
 - [React Router](https://github.com/reactjs/react-router)
 - [CSS modules](https://github.com/css-modules/css-modules)
-- [SASS]() support using [node-sass](https://github.com/sass/node-sass)
+- [SASS](http://sass-lang.com/) support using [node-sass](https://github.com/sass/node-sass)
 
 ## Tools
 - [Webpack](https://github.com/webpack/webpack)
@@ -28,6 +28,6 @@ As you can see the HMR is working without reloading the page for React component
 ## Getting started
 ```bash
 $ git clone https://github.com/rbartoli/react-boilerplate.git
-$ npm i # shortcut for npm install
+$ npm i
 $ npm start
 ```
