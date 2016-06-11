@@ -5,6 +5,7 @@ import WebpackNotifierPlugin from 'webpack-notifier'
 let config = {
   context: path.join(__dirname, 'src'),
   entry: [
+    'react-hot-loader/patch',
     './index.js'
   ],
   output: {
