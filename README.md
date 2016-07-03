@@ -6,7 +6,7 @@ A boilerplate to start a client-side project using React.
 - [React](https://github.com/facebook/react)
 - [React Router](https://github.com/reactjs/react-router)
 - [CSS modules](https://github.com/css-modules/css-modules)
-- [SASS](http://sass-lang.com/) support using [node-sass](https://github.com/sass/node-sass)
+- [PostCSS](http://postcss.org)
 
 ## Tools
 - [Webpack](https://github.com/webpack/webpack)

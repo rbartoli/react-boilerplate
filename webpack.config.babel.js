@@ -4,6 +4,7 @@ import WebpackNotifierPlugin from 'webpack-notifier'
 
 let config = {
   context: path.join(__dirname, 'src'),
+  debug: true,
   entry: [
     './index.js'
   ],
@@ -34,12 +35,12 @@ let config = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        loaders: ['style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]']
+        loaders: ['style', 'css?modules&sourceMap&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss']
       },
       {
-        test: /\.scss$/,
-        exclude: /node_modules/,
-        loaders: ['style', 'css', 'sass']
+        test: /\.css$/,
+        exclude: /src/,
+        loaders: ['style', 'css']
       },
       {
         test: /\.(jpg|png|ttf|eot|woff|woff2|svg)$/,
